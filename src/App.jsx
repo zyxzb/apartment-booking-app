@@ -23,7 +23,7 @@ function App() {
             <GlobalStyle />
             <Template>
               <Routes>
-                <Route path='/' index element={<Home />} />
+                <Route path='/' element={<Home />} />
                 <Route path='/cart' element={<CartPage />} />
                 <Route path='/apartments' element={<Apartments />} />
                 <Route path='/apartments/:id' element={<SingleApartment />} />
