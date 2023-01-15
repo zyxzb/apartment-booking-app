@@ -4,4 +4,4 @@ The application is designed for people who are interested in short-term rental o
 
 ## Design Inspiration from Free Figma Template [[link]](https://www.freefigmatemplates.com/gallery/hotel-website-template)
 
-##  [Check here how it works 🏩](https://www.freefigmatemplates.com/gallery/hotel-website-template)
+##  [Check here how it works 🏩](https://wwapartments.netlify.app/)
