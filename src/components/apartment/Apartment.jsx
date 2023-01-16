@@ -24,8 +24,12 @@ const Apartment = ({ apartment, apartments }) => {
 
   return (
     <ApartmentWrapper key={name}>
-      <div className='img-wrapper'>
-        <img src={apartment.image[0].url} alt='apartmrnt_image' ref={image} />
+      <div className='img-wrapper' ref={image}>
+        <img
+          src={apartment.image[0].url}
+          alt='apartmrnt_image'
+          loading='lazy'
+        />
         <Link
           to={`/apartments/${id}`}
           className='polygon-box'

@@ -59,7 +59,7 @@ const SingleApartment = () => {
       </div>
       <div className='center'>
         <ApartmentGallery images={singleApartment.image} />
-        <ApartmentDetails singleApartment={singleApartment} />
+        <ApartmentDetails singleApartment={singleApartment} id={id} />
       </div>
     </Wrapper>
   );

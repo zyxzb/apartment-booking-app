@@ -1,5 +1,6 @@
 import React from 'react';
 import GetInTouch from 'assets/images/getin.png';
+import GetInTouch_Webp from 'assets/images/getin.webp';
 import Star from 'components/atoms/Star';
 // import Form from 'components/hero/bannerSection/Form';
 import { Wrapper } from './Contact.style';
@@ -19,7 +20,10 @@ const Contact = () => {
         8 Lystopadovoho <br /> Chynu,Lviv
       </span>
       <div className='chairImg'>
-        <img src={GetInTouch} alt='chair' srcSet='' />
+        <picture loading='lazy'>
+          <source type='image/webp' srcset={GetInTouch_Webp} />
+          <img src={GetInTouch} alt='chair' srcSet='' />
+        </picture>
       </div>
       <h2 className='get-in'>
         Get in <Star />
