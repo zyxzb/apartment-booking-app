@@ -6,11 +6,9 @@ import gsap from 'gsap';
 import { RiPinDistanceLine } from 'react-icons/ri';
 import { IoPricetagsOutline } from 'react-icons/io5';
 import { IoMdCheckmark } from 'react-icons/io';
-import { useGlobalContext } from 'context/context';
 
 const Apartment = ({ apartment, apartments }) => {
   const { id, name, description, location, distance, price } = apartment;
-  const { handleSctollToTop } = useGlobalContext();
   const image = useRef(null);
   const tl = useRef(null);
 
@@ -30,11 +28,7 @@ const Apartment = ({ apartment, apartments }) => {
           alt='apartmrnt_image'
           loading='lazy'
         />
-        <Link
-          to={`/apartments/${id}`}
-          className='polygon-box'
-          onClick={handleSctollToTop}
-        >
+        <Link to={`/apartments/${id}`} className='polygon-box'>
           <Polygon5 />
           <span>Book apartment</span>
         </Link>
@@ -62,11 +56,7 @@ const Apartment = ({ apartment, apartments }) => {
           <strong>0{apartments.indexOf(apartment) + 1}</strong>/0
           {apartments.length}
         </span>
-        <Link
-          to={`/apartments/${id}`}
-          className='btn book-btn'
-          onClick={handleSctollToTop}
-        >
+        <Link to={`/apartments/${id}`} className='btn book-btn'>
           Book apartment
         </Link>
       </div>
