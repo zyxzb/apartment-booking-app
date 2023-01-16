@@ -23,7 +23,6 @@ export const Wrapper = styled.div`
     gap: 4rem;
     margin-top: 2rem;
     .content {
-      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -86,7 +85,7 @@ export const Wrapper = styled.div`
 
 export const ActionWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
