@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useGlobalContext } from 'context/context';
 import { TfiClose } from 'react-icons/tfi';
 import { SidebarWrapper } from './Sidebar.styles';
@@ -6,11 +6,26 @@ import Links from 'components/links/Links';
 import LogoSection from 'components/atoms/LogoSection';
 import { useUserContext } from 'context/auth-context';
 import { useCartContext } from 'context/cart_context';
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from 'body-scroll-lock';
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar, is50 } = useGlobalContext();
   const { clearCart } = useCartContext();
   const { loginWithRedirect, myUser, logout } = useUserContext();
+
+  useEffect(() => {
+    const targetLock = document.querySelector('#root');
+    if (isSidebarOpen) {
+      disableBodyScroll(targetLock);
+    } else {
+      enableBodyScroll(targetLock);
+    }
+    return () => clearAllBodyScrollLocks();
+  }, [isSidebarOpen]);
 
   return (
     <SidebarWrapper
