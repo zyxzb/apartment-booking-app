@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FooterWrapper = styled.footer`
+export const FooterWrapper = styled.footer `
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -36,9 +36,6 @@ export const FooterWrapper = styled.footer`
     }
     .text {
       margin-bottom: auto;
-    }
-    .copy {
-      opacity: 0.45;
     }
     form {
       background-color: transparent;

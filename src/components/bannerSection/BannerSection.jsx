@@ -14,8 +14,8 @@ const BannerSection = () => {
   return (
     <BannerWrapper>
       <picture loading='lazy'>
-        <source type='image/avif' srcset={BannerAvif} />
-        <source type='image/webp' srcset={BannerWebp} />
+        <source type='image/avif' srcSet={BannerAvif} />
+        <source type='image/webp' srcSet={BannerWebp} />
         <img src={Banner} alt='banner' srcSet='' />
       </picture>
       {/* <Form /> */}

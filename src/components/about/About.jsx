@@ -25,14 +25,14 @@ const About = () => {
       </div>
       <div className='space-img'>
         <picture loading='lazy'>
-          <source type='image/avif' srcset={Space_img_Avif} />
-          <source type='image/webp' srcset={Space_img_Webp} />
+          <source type='image/avif' srcSet={Space_img_Avif} />
+          <source type='image/webp' srcSet={Space_img_Webp} />
           <img src={Space_img} alt='space_img' srcSet='' />
         </picture>
       </div>
       <div className='space2-img'>
         <picture loading='lazy'>
-          <source type='image/webp' srcset={Space2_img_Webp} />
+          <source type='image/webp' srcSet={Space2_img_Webp} />
           <img src={Space2_img} alt='space2_img' srcSet='' />
         </picture>
       </div>

@@ -108,7 +108,7 @@ height: max-content;
     grid-row: 4/5;
     text-align: right;
     top: 75%;    
-    color: ${({ theme }) => theme.colors.secondary};
+    /* color: ${({ theme }) => theme.colors.secondary}; */
     @media (max-width: 768px) {
         top: 0; 
     }

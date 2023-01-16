@@ -19,7 +19,7 @@ const Sidebar = () => {
     >
       <div className='top'>
         <LogoSection />
-        <button type='button'>
+        <button type='button' aria-label='close menu'>
           <TfiClose className='close-sidebar' onClick={closeSidebar} />
         </button>
       </div>
@@ -29,6 +29,7 @@ const Sidebar = () => {
           <button
             type='button'
             className='btn'
+            aria-label='logout'
             onClick={() => {
               clearCart();
               logout({ returnTo: window.location.origin });
@@ -37,13 +38,20 @@ const Sidebar = () => {
             Logout
           </button>
         ) : (
-          <button type='button' className='btn' onClick={loginWithRedirect}>
+          <button
+            type='button'
+            className='btn'
+            aria-label='login'
+            onClick={loginWithRedirect}
+          >
             Login
           </button>
         )}
       </div>
       <div className='bottom'>
-        <a href='tel:+38 032 297 50 20'>+38 032 297 50 20</a>
+        <a href='tel:+38 032 297 50 20' aria-label='phone number'>
+          +38 032 297 50 20
+        </a>
         <p>
           8 Lystopadovoho <br /> Chynu, Lviv
         </p>

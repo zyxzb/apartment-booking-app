@@ -21,7 +21,7 @@ const Contact = () => {
       </span>
       <div className='chairImg'>
         <picture loading='lazy'>
-          <source type='image/webp' srcset={GetInTouch_Webp} />
+          <source type='image/webp' srcSet={GetInTouch_Webp} />
           <img src={GetInTouch} alt='chair' srcSet='' />
         </picture>
       </div>

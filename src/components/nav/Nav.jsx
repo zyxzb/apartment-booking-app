@@ -21,6 +21,7 @@ const Nav = () => {
           {myUser ? (
             <button
               type='button'
+              aria-label='logout'
               className='btn'
               onClick={() => {
                 clearCart();
@@ -30,7 +31,12 @@ const Nav = () => {
               Logout
             </button>
           ) : (
-            <button type='button' className='btn' onClick={loginWithRedirect}>
+            <button
+              type='button'
+              className='btn'
+              aria-label='login'
+              onClick={loginWithRedirect}
+            >
               Login
             </button>
           )}
@@ -38,7 +44,12 @@ const Nav = () => {
         <a className='tel' href='tel:+38 032 297 50 20'>
           +38 032 297 50 20
         </a>
-        <button type='button' className='toggle-sidebar' onClick={openSidebar}>
+        <button
+          type='button'
+          aria-label='open menu'
+          className='toggle-sidebar'
+          onClick={openSidebar}
+        >
           <AiOutlineMenu />
         </button>
       </Wrapper>
